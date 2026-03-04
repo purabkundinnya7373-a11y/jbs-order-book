@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JB's Restaurant | Guwahati's Trusted Vegetarian Landmark</title>
+    <meta name="description"
+        content="Experience the best South Indian classics, North Indian combos, and traditional Indian sweets at JB's, GS Road, Guwahati. 100% Pure Vegetarian.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="navbar">
+        <nav class="container">
+            <div class="logo">
+                <img src="logo.jpg" alt="JB's Logo" class="logo-img">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservations">Book a Table</a></li>
+                <li><a href="#location">Find Us</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="tel:+91XXXXXXXXXX" class="btn btn-outline mobile-hide">Call Now</a>
+                <a href="#menu" class="btn btn-primary">Order Now</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Dynamic Hero Section -->
+        <section id="hero">
+            <div class="slideshow">
+                <!-- Slide 1: Street Food (User Provided) -->
+                <div class="slide active" style="background-image: url('street_food.jpg');">
+                    <div class="hero-overlay"></div>
+                    <div class="container hero-content">
+                        <div class="trust-pill fade-in">
+                            <span class="star-rating">4.1★</span> (3,500+ Google Reviews)
+                        </div>
+                        <h1 class="hero-title">Guwahati's Trusted <br><span class="highlight">Vegetarian Landmark</span>
+                        </h1>
+                        <p class="hero-desc">Experience the legacy of authentic South Indian classics, hearty North
+                            Indian thalis, and traditional mithai.</p>
+                        <div class="hero-actions">
+                            <a href="#menu" class="btn btn-primary btn-lg">Order Now</a>
+                            <a href="#reservations" class="btn btn-secondary btn-lg">Book a Table</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2: South Indian -->
+                <div class="slide" style="background-image: url('hero.png');">
+                    <div class="hero-overlay"></div>
+                    <div class="container hero-content">
+                        <div class="trust-pill">
+                            <span class="star-rating">4.6★</span> (69K+ Delivery Ratings)
+                        </div>
+                        <h1 class="hero-title">Legendary <br><span class="highlight">South Indian</span> Staples</h1>
+                        <p class="hero-desc">Guwahati's favorite destination for crispy Masala Dosas, fluffy Idlis, and
+                            aromatic filter coffee.</p>
+                        <div class="hero-actions">
+                            <a href="#menu" class="btn btn-primary btn-lg">See South Indian Menu</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3: North Indian -->
+                <div class="slide" style="background-image: url('thali.png');">
+                    <div class="hero-overlay"></div>
+                    <div class="container hero-content">
+                        <div class="trust-pill">
+                            <span class="star-rating">100% Pure Veg</span> Quality Guaranteed
+                        </div>
+                        <h1 class="hero-title">Hearty <br><span class="highlight">North Indian</span> Thalis</h1>
+                        <p class="hero-desc">Rich flavors, traditional recipes, and wholesome meals for the entire
+                            family.</p>
+                        <div class="hero-actions">
+                            <a href="#menu" class="btn btn-primary btn-lg">Explore Thalis</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slideshow Navigation -->
+            <button class="slide-nav prev-btn" aria-label="Previous Slide">&#10094;</button>
+            <button class="slide-nav next-btn" aria-label="Next Slide">&#10095;</button>
+
+            <div class="slide-indicators">
+                <span class="indicator active" data-index="0"></span>
+                <span class="indicator" data-index="1"></span>
+                <span class="indicator" data-index="2"></span>
+            </div>
+
+            <!-- Scroll Down Indicator -->
+            <a href="#categories" class="scroll-down">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div>
+                    <span class="arrow-down"></span>
+                </div>
+            </a>
+        </section>
+
+        <!-- Category Section -->
+        <section id="categories" class="container">
+            <div class="section-header">
+                <h2>Our Specialties</h2>
+                <p>Explore our multi-cuisine vegetarian offerings</p>
+            </div>
+            <div class="category-grid">
+                <div class="category-card" data-category="south-indian">
+                    <div class="card-img" style="background-image: url('hero.png');"></div>
+                    <div class="card-content">
+                        <h3>South Indian</h3>
+                        <p>Idli, Dosa, Uttapam & more</p>
+                    </div>
+                </div>
+                <div class="category-card" data-category="north-indian">
+                    <div class="card-img" style="background-image: url('thali.png');"></div>
+                    <div class="card-content">
+                        <h3>North Indian</h3>
+                        <p>Shahi Thalis & Chole Bhature</p>
+                    </div>
+                </div>
+                <div class="category-card" data-category="sweets">
+                    <div class="card-img" style="background-image: url('sweets.png');"></div>
+                    <div class="card-content">
+                        <h3>Indian Sweets</h3>
+                        <p>Traditional Mithai & Desserts</p>
+                    </div>
+                </div>
+                <div class="category-card" data-category="street-food">
+                    <div class="card-img" style="background-image: url('street_food.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Street Food</h3>
+                        <p>Pani Puri, Chaats & Pav Bhaji</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section (Orderable) -->
+        <section id="menu" class="container">
+            <div class="menu-container">
+                <aside class="menu-tabs">
+                    <button class="active" data-cat="all">All Items</button>
+                    <button data-cat="south">South Indian</button>
+                    <button data-cat="north">North Indian</button>
+                    <button data-cat="chaat">Street Food</button>
+                    <button data-cat="sweets">Mithai</button>
+                </aside>
+                <div class="menu-display">
+                    <div id="menu-items" class="items-grid">
+                        <!-- Loaded via JS -->
+                    </div>
+                </div>
+                <aside class="cart-sidebar">
+                    <h3>Your Order</h3>
+                    <div id="cart-list">
+                        <p class="empty-msg">Your hand is empty. Let's fill it with food!</p>
+                    </div>
+                    <div id="bill-summary"
+                        style="display: none; border-top: 1px dashed #ccc; padding-top: 15px; margin-top: 15px;">
+                        <div class="bill-line"><span>Subtotal:</span> <span id="subtotal">₹0</span></div>
+                        <div class="bill-line"><span>GST (5%):</span> <span id="gst">₹0</span></div>
+                        <div class="bill-line"><span>Packing Charges:</span> <span id="packing">₹0</span></div>
+                    </div>
+                    <div class="cart-total">
+                        <span>Grand Total:</span>
+                        <span id="total-price">₹0</span>
+                    </div>
+                    <button class="btn btn-primary btn-block" id="checkout-btn" disabled>Place Order Online</button>
+                    <p style="font-size: 11px; text-align: center; margin-top: 10px; color: #888;">*By clicking, you
+                        will be redirected to our secure payment gateway.</p>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Reservation Section -->
+        <section id="reservations" class="container" style="padding: 100px 0;">
+            <div class="reservation-box">
+                <div class="res-info">
+                    <h2>Book a Table</h2>
+                    <p>Planned lunch or a family dinner? Reserve your spot in advance to avoid waiting during peak
+                        hours.</p>
+                    <ul class="res-features">
+                        <li>Dine-in peak hours: 1 PM - 3 PM, 8 PM - 10 PM</li>
+                        <li>Dedicated family-friendly seating</li>
+                        <li>systematic waitlist management</li>
+                    </ul>
+                </div>
+                <form id="reservation-form" class="res-form">
+                    <div class="form-group">
+                        <label for="res-name">Full Name</label>
+                        <input type="text" id="res-name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="res-phone">Mobile Number</label>
+                            <input type="tel" id="res-phone" placeholder="+91 00000 00000" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="res-email">Email Address</label>
+                            <input type="email" id="res-email" placeholder="example@mail.com" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="res-date">Select Date</label>
+                            <input type="date" id="res-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="res-time">Preferred Time</label>
+                            <select id="res-time" required>
+                                <option value="">Loading slots...</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="res-guests">Number of Guests</label>
+                        <input type="number" id="res-guests" min="1" max="20" value="2" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="res-requests">Special Requests (Optional)</label>
+                        <textarea id="res-requests" placeholder="Allergies, birthday celebration, quiet corner etc."
+                            rows="3"
+                            style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-family: inherit; resize: none;"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Request Reservation</button>
+                    <div id="res-success" class="res-success-view"
+                        style="display: none; text-align: center; padding: 40px 20px;">
+                        <div class="success-icon" style="font-size: 64px; color: #28a745; margin-bottom: 20px;">✓</div>
+                        <h3 style="color: var(--dark); font-size: 28px; margin-bottom: 10px;">Request Received!</h3>
+                        <p style="color: #666; margin-bottom: 30px;">Your reservation request has been logged
+                            successfully. We are verifying availability for your selected time.</p>
+
+                        <div class="booking-card"
+                            style="background: #f8f9fa; border: 1px solid #eee; border-radius: 12px; padding: 20px; margin-bottom: 30px; text-align: left;">
+                            <div style="margin-bottom: 15px; border-bottom: 1px dashed #ddd; padding-bottom: 10px;">
+                                <small
+                                    style="color: #aaa; text-transform: uppercase; font-weight: 700; font-size: 10px;">Booking
+                                    ID</small>
+                                <div id="success-id"
+                                    style="font-family: monospace; font-size: 20px; font-weight: bold; color: var(--primary);">
+                                    JB000000</div>
+                            </div>
+                            <div style="display: flex; gap: 20px;">
+                                <div>
+                                    <small style="color: #aaa; font-weight: 600; font-size: 10px;">DATE</small>
+                                    <div id="success-date" style="font-weight: 600;">--/--/--</div>
+                                </div>
+                                <div>
+                                    <small style="color: #aaa; font-weight: 600; font-size: 10px;">TIME</small>
+                                    <div id="success-time" style="font-weight: 600;">--:-- --</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-outline" onclick="location.reload()">Book Another Table</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="location">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <div class="logo">
+                    <img src="logo.jpg" alt="JB's Logo" class="logo-img footer-logo">
+                </div>
+                <p>Guwahati's favorite vegetarian destination on GS Road. Family-friendly dining with a legacy of taste.
+                </p>
+
+                <div class="delivery-partners" style="margin-top: 25px;">
+                    <p style="font-size: 14px; margin-bottom: 12px; font-weight: 600; color: #aaa;">Order Online Via:
+                    </p>
+                    <div class="partner-logos-flex">
+                        <div class="partner-item brand-only">
+                            <img src="zomato_clear.png" alt="Zomato" class="partner-img">
+                        </div>
+                        <div class="partner-divider"></div>
+                        <div class="partner-item brand-only">
+                            <img src="swiggy_clear.png" alt="Swiggy" class="partner-img">
+                        </div>
+                    </div>
+                </div>
+                <p><strong>Address:</strong> GS Road, near Apollo International Hospital, Ganeshguri, Guwahati, Assam
+                    781006</p>
+            </div>
+            <div class="footer-links">
+                <h4>Hours</h4>
+                <div class="hours-list">
+                    <p><span>Monday</span> <span>8 am – 10 pm</span></p>
+                    <p><span>Tuesday</span> <span>8 am – 10 pm</span></p>
+                    <p><span>Wednesday</span> <span>8 am – 10 pm</span></p>
+                    <p><span>Thursday</span> <span>8 am – 10 pm</span></p>
+                    <p><span>Friday</span> <span>8 am – 10 pm</span></p>
+                    <p><span>Saturday</span> <span>8 am – 10 pm</span></p>
+                    <p><span>Sunday</span> <span>8 am – 10 pm</span></p>
+                </div>
+            </div>
+            <div class="footer-cta">
+                <a href="https://maps.google.com" target="_blank" class="btn btn-outline">Get Directions</a>
+                <div class="socials">
+                    <!-- Social icons -->
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 JB's Vegetarian Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
